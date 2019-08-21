@@ -102,7 +102,7 @@
         {
             "misc_bhop_enable": false,
             "misc_nade_enable": false,
-            "misc_hitmarker_enabled":false
+            "misc_hitmarker_enable":false
         }
     ]
 }
