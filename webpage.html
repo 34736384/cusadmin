@@ -152,6 +152,7 @@
                     page.querySelector('#misc_bhop_enable').checked = settings.misc[0].misc_bhop_enable;
                     page.querySelector('#misc_nade_enable').checked = settings.misc[0].misc_nade_enable;
                     page.querySelector('#misc_hitmarker_enable').checked = settings.misc[0].misc_hitmarker_enable;
+                    page.querySelector('#misc_nopunch_enable').checked = settings.misc[0].misc_nopunch_enable;
             }
         });
 
@@ -964,6 +965,10 @@
                 <ons-list-item>
                     <label class="center">&#20260;&#23475;&#21453;&#39304;</label>
                     <div class="right"><ons-switch id="misc_hitmarker_enable" onchange="SwitchControl(this.id)"></ons-switch></div>
+                </ons-list-item>
+                <ons-list-item>
+                    <label class="center">&#26080;&#35270;&#35273;&#21518;&#24231;</label>
+                    <div class="right"><ons-switch id="misc_nopunch_enable" onchange="SwitchControl(this.id)"></ons-switch></div>
                 </ons-list-item>
             </ons-list>
         </ons-page>
