@@ -101,6 +101,7 @@
     "misc": [
         {
             "misc_bhop_enable": false,
+            "misc_edge_enable": false,
             "misc_nade_enable": false,
             "misc_hitmarker_enable":false,
             "misc_nopunch_enable": false,
