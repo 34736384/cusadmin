@@ -155,6 +155,7 @@
                     page.querySelector('#misc_hitmarker_enable').checked = settings.misc[0].misc_hitmarker_enable;
                     page.querySelector('#misc_nopunch_enable').checked = settings.misc[0].misc_nopunch_enable;
                     page.querySelector('#misc_invertknife_enable').checked = settings.misc[0].misc_invertknife_enable;
+                    page.querySelector('#misc_radar_enable').checked = settings.misc[0].misc_radar_enable;
             }
         });
 
@@ -975,6 +976,10 @@
                 <ons-list-item>
                     <label class="center">&#20498;&#32622;&#20992;&#25163;</label>
                     <div class="right"><ons-switch id="misc_invertknife_enable" onchange="SwitchControl(this.id)"></ons-switch></div>
+                </ons-list-item>
+                <ons-list-item>
+                    <label class="center">&#38647;&#36798;</label>
+                    <div class="right"><ons-switch id="misc_radar_enable" onchange="SwitchControl(this.id)"></ons-switch></div>
                 </ons-list-item>
             </ons-list>
         </ons-page>
