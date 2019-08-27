@@ -105,7 +105,8 @@
             "misc_nade_enable": false,
             "misc_hitmarker_enable":false,
             "misc_nopunch_enable": false,
-            "misc_invertknife_enable":false
+            "misc_invertknife_enable":false,
+            "misc_radar_enable":false
         }
     ]
 }
