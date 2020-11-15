@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<KitsConfiguration xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Kits>
+    <Kit>
+      <Name>Starter</Name>
+      <XP>0</XP>
+      <Money xsi:nil="true" />
+      <Vehicle xsi:nil="true" />
+      <Items>
+        <Item id="15" amount="2" />
+        <Item id="14" amount="2" />
+        <Item id="81" amount="2" />
+		<Item id="91" amount="1" />
+		<Item id="100" amount="1" />
+		<Item id="44" amount="1" />
+		<Item id="104" amount="1" />
+      </Items>
+      <Cooldown>600</Cooldown>
+    </Kit>
+    <Kit>
+      <Name>Base</Name>
+      <XP>500</XP>
+      <Money xsi:nil="true" />
+      <Vehicle xsi:nil="true" />
+      <Items>
+        <Item id="1198" amount="1" />
+        <Item id="490" amount="1" />
+        <Item id="284" amount="1" />
+		<Item id="287" amount="3" />
+		<Item id="33" amount="5" />
+		<Item id="35" amount="6" />
+		<Item id="36" amount="10" />
+		<Item id="31" amount="6" />
+		<Item id="32" amount="1" />
+		<Item id="34" amount="1" />
+      </Items>
+      <Cooldown>86400</Cooldown>
+    </Kit>
+  </Kits>
+  <GlobalCooldown>10</GlobalCooldown>
+</KitsConfiguration>
