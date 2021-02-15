@@ -55,372 +55,376 @@
                 case 'aimbot_rifle':
                     var session = settings.aimbot[0];
 
-                    if (session.hasOwnProperty('aimbot_rifle_enable'))
+                    if (session.hasOwnProperty('aimbot_rifle_enable') && session.aimbot_rifle_enable != null)
                         page.querySelector('#aimbot_rifle_enable').checked = session.aimbot_rifle_enable;
-                    if (session.hasOwnProperty('aimbot_rifle_target_teammate'))
+                    if (session.hasOwnProperty('aimbot_rifle_target_teammate') && session.aimbot_rifle_target_teammate != null)
                         page.querySelector('#aimbot_rifle_target_teammate').checked = session.aimbot_rifle_target_teammate;
-                    if (session.hasOwnProperty('aimbot_rifle_aim'))
+                    if (session.hasOwnProperty('aimbot_rifle_aim') && session.aimbot_rifle_aim != null)
                         page.querySelector('#aimbot_rifle_aim').innerHTML = session.aimbot_rifle_aim;
-                    if (session.hasOwnProperty('aimbot_rifle_autoaim'))
+                    if (session.hasOwnProperty('aimbot_rifle_autoaim') && session.aimbot_rifle_autoaim != null)
                         page.querySelector('#aimbot_rifle_autoaim').checked = session.aimbot_rifle_autoaim;
-                    if (session.hasOwnProperty('aimbot_rifle_fov'))
+                    if (session.hasOwnProperty('aimbot_rifle_fov') && session.aimbot_rifle_fov != null)
                         page.querySelector('#aimbot_rifle_fov').innerHTML = parseFloat(session.aimbot_rifle_fov).toFixed(1);
-                    if (session.hasOwnProperty('aimbot_rifle_fov'))
+                    if (session.hasOwnProperty('aimbot_rifle_fov') && session.aimbot_rifle_fov != null)
                         page.querySelector('#aimbot_rifle_fov_range').value = parseFloat(session.aimbot_rifle_fov) / 1.8;
-                    if (session.hasOwnProperty('aimbot_rifle_rcs'))
+                    if (session.hasOwnProperty('aimbot_rifle_rcs') && session.aimbot_rifle_rcs != null)
                         page.querySelector('#aimbot_rifle_rcs').innerHTML = session.aimbot_rifle_rcs;
-                    if (session.hasOwnProperty('aimbot_rifle_rcs_random'))
+                    if (session.hasOwnProperty('aimbot_rifle_rcs_random') && session.aimbot_rifle_rcs_random != null)
                         page.querySelector('#aimbot_rifle_rcs_random').checked = session.aimbot_rifle_rcs_random;
-                    if (session.hasOwnProperty('aimbot_rifle_rcs_x_min')) {
+                    if (session.hasOwnProperty('aimbot_rifle_rcs_x_min') && session.aimbot_rifle_rcs_x_min != null) {
                         page.querySelector('#aimbot_rifle_rcs_x_min').value = parseInt(session.aimbot_rifle_rcs_x_min * 100 / 2);
                         page.querySelector('#aimbot_rifle_rcs_text_x_min').innerHTML = page.querySelector('#aimbot_rifle_rcs_x_min').value + '%';
                     }
-                    if (session.hasOwnProperty('aimbot_rifle_rcs_x_max')) {
+                    if (session.hasOwnProperty('aimbot_rifle_rcs_x_max') && session.aimbot_rifle_rcs_x_max != null) {
                         page.querySelector('#aimbot_rifle_rcs_x_max').value = parseInt(session.aimbot_rifle_rcs_x_max * 100 / 2);
                         page.querySelector('#aimbot_rifle_rcs_text_x_max').innerHTML = page.querySelector('#aimbot_rifle_rcs_x_max').value + '%';
                     }
-                    if (session.hasOwnProperty('aimbot_rifle_rcs_y_min')) {
+                    if (session.hasOwnProperty('aimbot_rifle_rcs_y_min') && session.aimbot_rifle_rcs_y_min != null) {
                         page.querySelector('#aimbot_rifle_rcs_y_min').value = parseInt(session.aimbot_rifle_rcs_y_min * 100 / 2);
                         page.querySelector('#aimbot_rifle_rcs_text_y_min').innerHTML = page.querySelector('#aimbot_rifle_rcs_y_min').value + '%';
                     }
-                    if (session.hasOwnProperty('aimbot_rifle_rcs_y_max')) {
+                    if (session.hasOwnProperty('aimbot_rifle_rcs_y_max') && session.aimbot_rifle_rcs_y_max != null) {
                         page.querySelector('#aimbot_rifle_rcs_y_max').value = parseInt(session.aimbot_rifle_rcs_y_max * 100 / 2);
                         page.querySelector('#aimbot_rifle_rcs_text_y_max').innerHTML = page.querySelector('#aimbot_rifle_rcs_y_max').value + '%';
                     }
-                    if (session.hasOwnProperty('aimbot_rifle_smooth'))
+                    if (session.hasOwnProperty('aimbot_rifle_smooth') && session.aimbot_rifle_smooth != null)
                         page.querySelector('#aimbot_rifle_smooth').checked = session.aimbot_rifle_smooth;
-                    if (session.hasOwnProperty('aimbot_rifle_smooth_value'))
+                    if (session.hasOwnProperty('aimbot_rifle_smooth_value') && session.aimbot_rifle_smooth_value != null)
                         page.querySelector('#aimbot_rifle_smooth_value').innerHTML = parseFloat(session.aimbot_rifle_smooth_value).toFixed(1);
-                    if (session.hasOwnProperty('aimbot_rifle_smooth_value'))
+                    if (session.hasOwnProperty('aimbot_rifle_smooth_value') && session.aimbot_rifle_smooth_value != null)
                         page.querySelector('#aimbot_rifle_smooth_range').value = parseFloat(session.aimbot_rifle_smooth_value) * 100;
-                    if (session.hasOwnProperty('aimbot_rifle_salt'))
+                    if (session.hasOwnProperty('aimbot_rifle_salt') && session.aimbot_rifle_salt != null)
                         page.querySelector('#aimbot_rifle_salt').checked = session.aimbot_rifle_salt;
-                    if (session.hasOwnProperty('aimbot_rifle_salt_value'))
+                    if (session.hasOwnProperty('aimbot_rifle_salt_value') && session.aimbot_rifle_salt_value != null)
                         page.querySelector('#aimbot_rifle_salt_value').innerHTML = parseFloat(session.aimbot_rifle_salt_value).toFixed(1);
-                    if (session.hasOwnProperty('aimbot_rifle_salt_value'))
+                    if (session.hasOwnProperty('aimbot_rifle_salt_value') && session.aimbot_rifle_salt_value != null)
                         page.querySelector('#aimbot_rifle_salt_range').value = parseFloat(session.aimbot_rifle_salt_value) * 100;
-                    if (session.hasOwnProperty('aimbot_rifle_errmargin'))
+                    if (session.hasOwnProperty('aimbot_rifle_errmargin') && session.aimbot_rifle_errmargin != null)
                         page.querySelector('#aimbot_rifle_errmargin').checked = session.aimbot_rifle_errmargin;
-                    if (session.hasOwnProperty('aimbot_rifle_errm_value'))
+                    if (session.hasOwnProperty('aimbot_rifle_errm_value') && session.aimbot_rifle_errm_value != null)
                         page.querySelector('#aimbot_rifle_errm_value').innerHTML = parseFloat(session.aimbot_rifle_errm_value).toFixed(1);
-                    if (session.hasOwnProperty('aimbot_rifle_errm_value'))
+                    if (session.hasOwnProperty('aimbot_rifle_errm_value') && session.aimbot_rifle_errm_value != null)
                         page.querySelector('#aimbot_rifle_errm_range').value = parseFloat(session.aimbot_rifle_errm_value) * 100;
-                    if (session.hasOwnProperty('aimbot_rifle_smoothtype'))
+                    if (session.hasOwnProperty('aimbot_rifle_smoothtype') && session.aimbot_rifle_smoothtype != null)
                         page.querySelector('#aimbot_rifle_smoothtype').innerHTML = session.aimbot_rifle_smoothtype;
-                    if (session.hasOwnProperty('aimbot_rifle_smoke'))
+                    if (session.hasOwnProperty('aimbot_rifle_smoke') && session.aimbot_rifle_smoke != null)
                         page.querySelector('#aimbot_rifle_smoke').checked = session.aimbot_rifle_smoke;
-                    if (session.hasOwnProperty('aimbot_rifle_prediction'))
+                    if (session.hasOwnProperty('aimbot_rifle_prediction') && session.aimbot_rifle_prediction != null)
                         page.querySelector('#aimbot_rifle_prediction').checked = session.aimbot_rifle_prediction;
-                    if (session.hasOwnProperty('aimbot_rifle_ignore_jump'))
+                    if (session.hasOwnProperty('aimbot_rifle_ignore_jump') && session.aimbot_rifle_ignore_jump != null)
                         page.querySelector('#aimbot_rifle_ignore_jump').checked = session.aimbot_rifle_ignore_jump;
-                    if (session.hasOwnProperty('aimbot_rifle_flash'))
+                    if (session.hasOwnProperty('aimbot_rifle_flash') && session.aimbot_rifle_flash != null)
                         page.querySelector('#aimbot_rifle_flash').checked = session.aimbot_rifle_flash;
-                    if (session.hasOwnProperty('aimbot_rifle_ignore_limbs'))
+                    if (session.hasOwnProperty('aimbot_rifle_ignore_limbs') && session.aimbot_rifle_ignore_limbs != null)
                         page.querySelector('#aimbot_rifle_ignore_limbs').checked = session.aimbot_rifle_ignore_limbs;
-                    if (session.hasOwnProperty('aimbot_rifle_priority'))
+                    if (session.hasOwnProperty('aimbot_rifle_priority') && session.aimbot_rifle_priority != null)
                         page.querySelector('#aimbot_rifle_priority').innerHTML = session.aimbot_rifle_priority;
-                    if (session.hasOwnProperty('aimbot_rifle_timeout'))
+                    if (session.hasOwnProperty('aimbot_rifle_timeout') && session.aimbot_rifle_timeout != null)
                         page.querySelector('#aimbot_rifle_timeout').innerHTML = session.aimbot_rifle_timeout;
-                    if (session.hasOwnProperty('aimbot_rifle_timeout'))
+                    if (session.hasOwnProperty('aimbot_rifle_timeout') && session.aimbot_rifle_timeout != null)
                         page.querySelector('#aimbot_rifle_timeout_range').value = parseInt(session.aimbot_rifle_timeout / 20);
-
-                    RCSRandomSwitch('aimbot_rifle_rcs_random', false);
+                    
+                    if (session.aimbot_rifle_rcs_random != null)
+                        RCSRandomSwitch('aimbot_rifle_rcs_random', false);
                     break;
                 case 'aimbot_smg':
                     var session = settings.aimbot[1];
 
-                    if (session.hasOwnProperty('aimbot_smg_enable'))
+                    if (session.hasOwnProperty('aimbot_smg_enable') && session.aimbot_smg_enable != null)
                         page.querySelector('#aimbot_smg_enable').checked = session.aimbot_smg_enable;
-                    if (session.hasOwnProperty('aimbot_smg_target_teammate'))
+                    if (session.hasOwnProperty('aimbot_smg_target_teammate') && session.aimbot_smg_target_teammate != null)
                         page.querySelector('#aimbot_smg_target_teammate').checked = session.aimbot_smg_target_teammate;
-                    if (session.hasOwnProperty('aimbot_smg_aim'))
+                    if (session.hasOwnProperty('aimbot_smg_aim') && session.aimbot_smg_aim != null)
                         page.querySelector('#aimbot_smg_aim').innerHTML = session.aimbot_smg_aim;
-                    if (session.hasOwnProperty('aimbot_smg_autoaim'))
+                    if (session.hasOwnProperty('aimbot_smg_autoaim') && session.aimbot_smg_autoaim != null)
                         page.querySelector('#aimbot_smg_autoaim').checked = session.aimbot_smg_autoaim;
-                    if (session.hasOwnProperty('aimbot_smg_fov'))
+                    if (session.hasOwnProperty('aimbot_smg_fov') && session.aimbot_smg_fov != null)
                         page.querySelector('#aimbot_smg_fov').innerHTML = parseFloat(session.aimbot_smg_fov).toFixed(1);
-                    if (session.hasOwnProperty('aimbot_smg_fov'))
+                    if (session.hasOwnProperty('aimbot_smg_fov') && session.aimbot_smg_fov != null)
                         page.querySelector('#aimbot_smg_fov_range').value = parseFloat(session.aimbot_smg_fov) / 1.8;
-                    if (session.hasOwnProperty('aimbot_smg_rcs'))
+                    if (session.hasOwnProperty('aimbot_smg_rcs') && session.aimbot_smg_rcs != null)
                         page.querySelector('#aimbot_smg_rcs').innerHTML = session.aimbot_smg_rcs;
-                    if (session.hasOwnProperty('aimbot_smg_rcs_random'))
+                    if (session.hasOwnProperty('aimbot_smg_rcs_random') && session.aimbot_smg_rcs_random != null)
                         page.querySelector('#aimbot_smg_rcs_random').checked = session.aimbot_smg_rcs_random;
-                    if (session.hasOwnProperty('aimbot_smg_rcs_x_min')) {
+                    if (session.hasOwnProperty('aimbot_smg_rcs_x_min') && session.aimbot_smg_rcs_x_min != null) {
                         page.querySelector('#aimbot_smg_rcs_x_min').value = parseInt(session.aimbot_smg_rcs_x_min * 100 / 2);
                         page.querySelector('#aimbot_smg_rcs_text_x_min').innerHTML = page.querySelector('#aimbot_smg_rcs_x_min').value + '%';
                     }
-                    if (session.hasOwnProperty('aimbot_smg_rcs_x_max')) {
+                    if (session.hasOwnProperty('aimbot_smg_rcs_x_max') && session.aimbot_smg_rcs_x_max != null) {
                         page.querySelector('#aimbot_smg_rcs_x_max').value = parseInt(session.aimbot_smg_rcs_x_max * 100 / 2);
                         page.querySelector('#aimbot_smg_rcs_text_x_max').innerHTML = page.querySelector('#aimbot_smg_rcs_x_max').value + '%';
                     }
-                    if (session.hasOwnProperty('aimbot_smg_rcs_y_min')) {
+                    if (session.hasOwnProperty('aimbot_smg_rcs_y_min') && session.aimbot_smg_rcs_y_min != null) {
                         page.querySelector('#aimbot_smg_rcs_y_min').value = parseInt(session.aimbot_smg_rcs_y_min * 100 / 2);
                         page.querySelector('#aimbot_smg_rcs_text_y_min').innerHTML = page.querySelector('#aimbot_smg_rcs_y_min').value + '%';
                     }
-                    if (session.hasOwnProperty('aimbot_smg_rcs_y_max')) {
+                    if (session.hasOwnProperty('aimbot_smg_rcs_y_max') && session.aimbot_smg_rcs_y_max != null) {
                         page.querySelector('#aimbot_smg_rcs_y_max').value = parseInt(session.aimbot_smg_rcs_y_max * 100 / 2);
                         page.querySelector('#aimbot_smg_rcs_text_y_max').innerHTML = page.querySelector('#aimbot_smg_rcs_y_max').value + '%';
                     }
-                    if (session.hasOwnProperty('aimbot_smg_smooth'))
+                    if (session.hasOwnProperty('aimbot_smg_smooth') && session.aimbot_smg_smooth != null)
                         page.querySelector('#aimbot_smg_smooth').checked = session.aimbot_smg_smooth;
-                    if (session.hasOwnProperty('aimbot_smg_smooth_value'))
+                    if (session.hasOwnProperty('aimbot_smg_smooth_value') && session.aimbot_smg_smooth_value != null)
                         page.querySelector('#aimbot_smg_smooth_value').innerHTML = parseFloat(session.aimbot_smg_smooth_value).toFixed(1);
-                    if (session.hasOwnProperty('aimbot_smg_smooth_value'))
+                    if (session.hasOwnProperty('aimbot_smg_smooth_value') && session.aimbot_smg_smooth_value != null)
                         page.querySelector('#aimbot_smg_smooth_range').value = parseFloat(session.aimbot_smg_smooth_value) * 100;
-                    if (session.hasOwnProperty('aimbot_smg_salt'))
+                    if (session.hasOwnProperty('aimbot_smg_salt') && session.aimbot_smg_salt != null)
                         page.querySelector('#aimbot_smg_salt').checked = session.aimbot_smg_salt;
-                    if (session.hasOwnProperty('aimbot_smg_salt_value'))
+                    if (session.hasOwnProperty('aimbot_smg_salt_value') && session.aimbot_smg_salt_value != null)
                         page.querySelector('#aimbot_smg_salt_value').innerHTML = parseFloat(session.aimbot_smg_salt_value).toFixed(1);
-                    if (session.hasOwnProperty('aimbot_smg_salt_value'))
+                    if (session.hasOwnProperty('aimbot_smg_salt_value') && session.aimbot_smg_salt_value != null)
                         page.querySelector('#aimbot_smg_salt_range').value = parseFloat(session.aimbot_smg_salt_value) * 100;
-                    if (session.hasOwnProperty('aimbot_smg_errmargin'))
+                    if (session.hasOwnProperty('aimbot_smg_errmargin') && session.aimbot_smg_errmargin != null)
                         page.querySelector('#aimbot_smg_errmargin').checked = session.aimbot_smg_errmargin;
-                    if (session.hasOwnProperty('aimbot_smg_errm_value'))
+                    if (session.hasOwnProperty('aimbot_smg_errm_value') && session.aimbot_smg_errm_value != null)
                         page.querySelector('#aimbot_smg_errm_value').innerHTML = parseFloat(session.aimbot_smg_errm_value).toFixed(1);
-                    if (session.hasOwnProperty('aimbot_smg_errm_value'))
+                    if (session.hasOwnProperty('aimbot_smg_errm_value') && session.aimbot_smg_errm_value != null)
                         page.querySelector('#aimbot_smg_errm_range').value = parseFloat(session.aimbot_smg_errm_value) * 100;
-                    if (session.hasOwnProperty('aimbot_smg_smoothtype'))
+                    if (session.hasOwnProperty('aimbot_smg_smoothtype') && session.aimbot_smg_smoothtype != null)
                         page.querySelector('#aimbot_smg_smoothtype').innerHTML = session.aimbot_smg_smoothtype;
-                    if (session.hasOwnProperty('aimbot_smg_smoke'))
+                    if (session.hasOwnProperty('aimbot_smg_smoke') && session.aimbot_smg_smoke != null)
                         page.querySelector('#aimbot_smg_smoke').checked = session.aimbot_smg_smoke;
-                    if (session.hasOwnProperty('aimbot_smg_prediction'))
+                    if (session.hasOwnProperty('aimbot_smg_prediction') && session.aimbot_smg_prediction != null)
                         page.querySelector('#aimbot_smg_prediction').checked = session.aimbot_smg_prediction;
-                    if (session.hasOwnProperty('aimbot_smg_ignore_jump'))
+                    if (session.hasOwnProperty('aimbot_smg_ignore_jump') && session.aimbot_smg_ignore_jump != null)
                         page.querySelector('#aimbot_smg_ignore_jump').checked = session.aimbot_smg_ignore_jump;
-                    if (session.hasOwnProperty('aimbot_smg_flash'))
+                    if (session.hasOwnProperty('aimbot_smg_flash') && session.aimbot_smg_flash != null)
                         page.querySelector('#aimbot_smg_flash').checked = session.aimbot_smg_flash;
-                    if (session.hasOwnProperty('aimbot_smg_ignore_limbs'))
+                    if (session.hasOwnProperty('aimbot_smg_ignore_limbs') && session.aimbot_smg_ignore_limbs != null)
                         page.querySelector('#aimbot_smg_ignore_limbs').checked = session.aimbot_smg_ignore_limbs;
-                    if (session.hasOwnProperty('aimbot_smg_priority'))
+                    if (session.hasOwnProperty('aimbot_smg_priority') && session.aimbot_smg_priority != null)
                         page.querySelector('#aimbot_smg_priority').innerHTML = session.aimbot_smg_priority;
-                    if (session.hasOwnProperty('aimbot_smg_timeout'))
+                    if (session.hasOwnProperty('aimbot_smg_timeout') && session.aimbot_smg_timeout != null)
                         page.querySelector('#aimbot_smg_timeout').innerHTML = session.aimbot_smg_timeout;
-                    if (session.hasOwnProperty('aimbot_smg_timeout'))
+                    if (session.hasOwnProperty('aimbot_smg_timeout') && session.aimbot_smg_timeout != null)
                         page.querySelector('#aimbot_smg_timeout_range').value = parseInt(session.aimbot_smg_timeout / 20);
-
-                    RCSRandomSwitch('aimbot_smg_rcs_random', false);
+                    
+                    if (session.aimbot_smg_rcs_random != null)
+                        RCSRandomSwitch('aimbot_smg_rcs_random', false);
                     break;
                 case 'aimbot_pistol':
                     var session = settings.aimbot[2];
 
-                    if (session.hasOwnProperty('aimbot_pistol_enable'))
+                    if (session.hasOwnProperty('aimbot_pistol_enable') && session.aimbot_pistol_enable != null)
                         page.querySelector('#aimbot_pistol_enable').checked = session.aimbot_pistol_enable;
-                    if (session.hasOwnProperty('aimbot_pistol_target_teammate'))
+                    if (session.hasOwnProperty('aimbot_pistol_target_teammate') && session.aimbot_pistol_target_teammate != null)
                         page.querySelector('#aimbot_pistol_target_teammate').checked = session.aimbot_pistol_target_teammate;
-                    if (session.hasOwnProperty('aimbot_pistol_aim'))
+                    if (session.hasOwnProperty('aimbot_pistol_aim') && session.aimbot_pistol_aim != null)
                         page.querySelector('#aimbot_pistol_aim').innerHTML = session.aimbot_pistol_aim;
-                    if (session.hasOwnProperty('aimbot_pistol_autoaim'))
+                    if (session.hasOwnProperty('aimbot_pistol_autoaim') && session.aimbot_pistol_autoaim != null)
                         page.querySelector('#aimbot_pistol_autoaim').checked = session.aimbot_pistol_autoaim;
-                    if (session.hasOwnProperty('aimbot_pistol_fov'))
+                    if (session.hasOwnProperty('aimbot_pistol_fov') && session.aimbot_pistol_fov != null)
                         page.querySelector('#aimbot_pistol_fov').innerHTML = parseFloat(session.aimbot_pistol_fov).toFixed(1);
-                    if (session.hasOwnProperty('aimbot_pistol_fov'))
+                    if (session.hasOwnProperty('aimbot_pistol_fov') && session.aimbot_pistol_fov != null)
                         page.querySelector('#aimbot_pistol_fov_range').value = parseFloat(session.aimbot_pistol_fov) / 1.8;
-                    if (session.hasOwnProperty('aimbot_pistol_rcs'))
+                    if (session.hasOwnProperty('aimbot_pistol_rcs') && session.aimbot_pistol_rcs != null)
                         page.querySelector('#aimbot_pistol_rcs').innerHTML = session.aimbot_pistol_rcs;
-                    if (session.hasOwnProperty('aimbot_pistol_rcs_random'))
+                    if (session.hasOwnProperty('aimbot_pistol_rcs_random') && session.aimbot_pistol_rcs_random != null)
                         page.querySelector('#aimbot_pistol_rcs_random').checked = session.aimbot_pistol_rcs_random;
-                    if (session.hasOwnProperty('aimbot_pistol_rcs_x_min')) {
+                    if (session.hasOwnProperty('aimbot_pistol_rcs_x_min') && session.aimbot_pistol_rcs_x_min != null) {
                         page.querySelector('#aimbot_pistol_rcs_x_min').value = parseInt(session.aimbot_pistol_rcs_x_min * 100 / 2);
                         page.querySelector('#aimbot_pistol_rcs_text_x_min').innerHTML = page.querySelector('#aimbot_pistol_rcs_x_min').value + '%';
                     }
-                    if (session.hasOwnProperty('aimbot_pistol_rcs_x_max')) {
+                    if (session.hasOwnProperty('aimbot_pistol_rcs_x_max') && session.aimbot_pistol_rcs_x_max != null) {
                         page.querySelector('#aimbot_pistol_rcs_x_max').value = parseInt(session.aimbot_pistol_rcs_x_max * 100 / 2);
                         page.querySelector('#aimbot_pistol_rcs_text_x_max').innerHTML = page.querySelector('#aimbot_pistol_rcs_x_max').value + '%';
                     }
-                    if (session.hasOwnProperty('aimbot_pistol_rcs_y_min')) {
+                    if (session.hasOwnProperty('aimbot_pistol_rcs_y_min') && session.aimbot_pistol_rcs_y_min != null) {
                         page.querySelector('#aimbot_pistol_rcs_y_min').value = parseInt(session.aimbot_pistol_rcs_y_min * 100 / 2);
                         page.querySelector('#aimbot_pistol_rcs_text_y_min').innerHTML = page.querySelector('#aimbot_pistol_rcs_y_min').value + '%';
                     }
-                    if (session.hasOwnProperty('aimbot_pistol_rcs_y_max')) {
+                    if (session.hasOwnProperty('aimbot_pistol_rcs_y_max') && session.aimbot_pistol_rcs_y_max != null) {
                         page.querySelector('#aimbot_pistol_rcs_y_max').value = parseInt(session.aimbot_pistol_rcs_y_max * 100 / 2);
                         page.querySelector('#aimbot_pistol_rcs_text_y_max').innerHTML = page.querySelector('#aimbot_pistol_rcs_y_max').value + '%';
                     }
-                    if (session.hasOwnProperty('aimbot_pistol_smooth'))
+                    if (session.hasOwnProperty('aimbot_pistol_smooth') && session.aimbot_pistol_smooth != null)
                         page.querySelector('#aimbot_pistol_smooth').checked = session.aimbot_pistol_smooth;
-                    if (session.hasOwnProperty('aimbot_pistol_smooth_value'))
+                    if (session.hasOwnProperty('aimbot_pistol_smooth_value') && session.aimbot_pistol_smooth_value != null)
                         page.querySelector('#aimbot_pistol_smooth_value').innerHTML = parseFloat(session.aimbot_pistol_smooth_value).toFixed(1);
-                    if (session.hasOwnProperty('aimbot_pistol_smooth_value'))
+                    if (session.hasOwnProperty('aimbot_pistol_smooth_value') && session.aimbot_pistol_smooth_value != null)
                         page.querySelector('#aimbot_pistol_smooth_range').value = parseFloat(session.aimbot_pistol_smooth_value) * 100;
-                    if (session.hasOwnProperty('aimbot_pistol_salt'))
+                    if (session.hasOwnProperty('aimbot_pistol_salt') && session.aimbot_pistol_salt != null)
                         page.querySelector('#aimbot_pistol_salt').checked = session.aimbot_pistol_salt;
-                    if (session.hasOwnProperty('aimbot_pistol_salt_value'))
+                    if (session.hasOwnProperty('aimbot_pistol_salt_value') && session.aimbot_pistol_salt_value != null)
                         page.querySelector('#aimbot_pistol_salt_value').innerHTML = parseFloat(session.aimbot_pistol_salt_value).toFixed(1);
-                    if (session.hasOwnProperty('aimbot_pistol_salt_value'))
+                    if (session.hasOwnProperty('aimbot_pistol_salt_value') && session.aimbot_pistol_salt_value != null)
                         page.querySelector('#aimbot_pistol_salt_range').value = parseFloat(session.aimbot_pistol_salt_value) * 100;
-                    if (session.hasOwnProperty('aimbot_pistol_errmargin'))
+                    if (session.hasOwnProperty('aimbot_pistol_errmargin') && session.aimbot_pistol_errmargin != null)
                         page.querySelector('#aimbot_pistol_errmargin').checked = session.aimbot_pistol_errmargin;
-                    if (session.hasOwnProperty('aimbot_pistol_errm_value'))
+                    if (session.hasOwnProperty('aimbot_pistol_errm_value') && session.aimbot_pistol_errm_value != null)
                         page.querySelector('#aimbot_pistol_errm_value').innerHTML = parseFloat(session.aimbot_pistol_errm_value).toFixed(1);
-                    if (session.hasOwnProperty('aimbot_pistol_errm_value'))
+                    if (session.hasOwnProperty('aimbot_pistol_errm_value') && session.aimbot_pistol_errm_value != null)
                         page.querySelector('#aimbot_pistol_errm_range').value = parseFloat(session.aimbot_pistol_errm_value) * 100;
-                    if (session.hasOwnProperty('aimbot_pistol_smoothtype'))
+                    if (session.hasOwnProperty('aimbot_pistol_smoothtype') && session.aimbot_pistol_smoothtype != null)
                         page.querySelector('#aimbot_pistol_smoothtype').innerHTML = session.aimbot_pistol_smoothtype;
-                    if (session.hasOwnProperty('aimbot_pistol_smoke'))
+                    if (session.hasOwnProperty('aimbot_pistol_smoke') && session.aimbot_pistol_smoke != null)
                         page.querySelector('#aimbot_pistol_smoke').checked = session.aimbot_pistol_smoke;
-                    if (session.hasOwnProperty('aimbot_pistol_prediction'))
+                    if (session.hasOwnProperty('aimbot_pistol_prediction') && session.aimbot_pistol_prediction != null)
                         page.querySelector('#aimbot_pistol_prediction').checked = session.aimbot_pistol_prediction;
-                    if (session.hasOwnProperty('aimbot_pistol_ignore_jump'))
+                    if (session.hasOwnProperty('aimbot_pistol_ignore_jump') && session.aimbot_pistol_ignore_jump != null)
                         page.querySelector('#aimbot_pistol_ignore_jump').checked = session.aimbot_pistol_ignore_jump;
-                    if (session.hasOwnProperty('aimbot_pistol_flash'))
+                    if (session.hasOwnProperty('aimbot_pistol_flash') && session.aimbot_pistol_flash != null)
                         page.querySelector('#aimbot_pistol_flash').checked = session.aimbot_pistol_flash;
-                    if (session.hasOwnProperty('aimbot_pistol_ignore_limbs'))
+                    if (session.hasOwnProperty('aimbot_pistol_ignore_limbs') && session.aimbot_pistol_ignore_limbs != null)
                         page.querySelector('#aimbot_pistol_ignore_limbs').checked = session.aimbot_pistol_ignore_limbs;
-                    if (session.hasOwnProperty('aimbot_pistol_priority'))
+                    if (session.hasOwnProperty('aimbot_pistol_priority') && session.aimbot_pistol_priority != null)
                         page.querySelector('#aimbot_pistol_priority').innerHTML = session.aimbot_pistol_priority;
-                    if (session.hasOwnProperty('aimbot_pistol_timeout'))
+                    if (session.hasOwnProperty('aimbot_pistol_timeout') && session.aimbot_pistol_timeout != null)
                         page.querySelector('#aimbot_pistol_timeout').innerHTML = session.aimbot_pistol_timeout;
-                    if (session.hasOwnProperty('aimbot_pistol_timeout'))
+                    if (session.hasOwnProperty('aimbot_pistol_timeout') && session.aimbot_pistol_timeout != null)
                         page.querySelector('#aimbot_pistol_timeout_range').value = parseInt(session.aimbot_pistol_timeout / 20);
-
-                    RCSRandomSwitch('aimbot_pistol_rcs_random', false);
+                    
+                    if (session.aimbot_pistol_rcs_random != null)
+                        RCSRandomSwitch('aimbot_pistol_rcs_random', false);
                     break;
                 case 'aimbot_sniper':
                     var session = settings.aimbot[3];
-
-                    if (session.hasOwnProperty('aimbot_sniper_enable'))
+                    if (session.hasOwnProperty('aimbot_sniper_enable') && session.aimbot_sniper_enable != null)
                         page.querySelector('#aimbot_sniper_enable').checked = session.aimbot_sniper_enable;
-                    if (session.hasOwnProperty('aimbot_sniper_target_teammate'))
+                    if (session.hasOwnProperty('aimbot_sniper_target_teammate') && session.aimbot_sniper_target_teammate != null)
                         page.querySelector('#aimbot_sniper_target_teammate').checked = session.aimbot_sniper_target_teammate;
-                    if (session.hasOwnProperty('aimbot_sniper_aim'))
+                    if (session.hasOwnProperty('aimbot_sniper_aim') && session.aimbot_sniper_aim != null)
                         page.querySelector('#aimbot_sniper_aim').innerHTML = session.aimbot_sniper_aim;
-                    if (session.hasOwnProperty('aimbot_sniper_autoaim'))
+                    if (session.hasOwnProperty('aimbot_sniper_autoaim') && session.aimbot_sniper_autoaim != null)
                         page.querySelector('#aimbot_sniper_autoaim').checked = session.aimbot_sniper_autoaim;
-                    if (session.hasOwnProperty('aimbot_sniper_fov'))
+                    if (session.hasOwnProperty('aimbot_sniper_fov') && session.aimbot_sniper_fov != null)
                         page.querySelector('#aimbot_sniper_fov').innerHTML = parseFloat(session.aimbot_sniper_fov).toFixed(1);
-                    if (session.hasOwnProperty('aimbot_sniper_fov'))
+                    if (session.hasOwnProperty('aimbot_sniper_fov') && session.aimbot_sniper_fov != null)
                         page.querySelector('#aimbot_sniper_fov_range').value = parseFloat(session.aimbot_sniper_fov) / 1.8;
-                    if (session.hasOwnProperty('aimbot_sniper_rcs'))
+                    if (session.hasOwnProperty('aimbot_sniper_rcs') && session.aimbot_sniper_rcs != null)
                         page.querySelector('#aimbot_sniper_rcs').innerHTML = session.aimbot_sniper_rcs;
-                    if (session.hasOwnProperty('aimbot_sniper_rcs_random'))
+                    if (session.hasOwnProperty('aimbot_sniper_rcs_random') && session.aimbot_sniper_rcs_random != null)
                         page.querySelector('#aimbot_sniper_rcs_random').checked = session.aimbot_sniper_rcs_random;
-                    if (session.hasOwnProperty('aimbot_sniper_rcs_x_min')) {
+                    if (session.hasOwnProperty('aimbot_sniper_rcs_x_min') && session.aimbot_sniper_rcs_x_min != null) {
                         page.querySelector('#aimbot_sniper_rcs_x_min').value = parseInt(session.aimbot_sniper_rcs_x_min * 100 / 2);
                         page.querySelector('#aimbot_sniper_rcs_text_x_min').innerHTML = page.querySelector('#aimbot_sniper_rcs_x_min').value + '%';
                     }
-                    if (session.hasOwnProperty('aimbot_sniper_rcs_x_max')) {
+                    if (session.hasOwnProperty('aimbot_sniper_rcs_x_max') && session.aimbot_sniper_rcs_x_max != null) {
                         page.querySelector('#aimbot_sniper_rcs_x_max').value = parseInt(session.aimbot_sniper_rcs_x_max * 100 / 2);
                         page.querySelector('#aimbot_sniper_rcs_text_x_max').innerHTML = page.querySelector('#aimbot_sniper_rcs_x_max').value + '%';
                     }
-                    if (session.hasOwnProperty('aimbot_sniper_rcs_y_min')) {
+                    if (session.hasOwnProperty('aimbot_sniper_rcs_y_min') && session.aimbot_sniper_rcs_y_min != null) {
                         page.querySelector('#aimbot_sniper_rcs_y_min').value = parseInt(session.aimbot_sniper_rcs_y_min * 100 / 2);
                         page.querySelector('#aimbot_sniper_rcs_text_y_min').innerHTML = page.querySelector('#aimbot_sniper_rcs_y_min').value + '%';
                     }
-                    if (session.hasOwnProperty('aimbot_sniper_rcs_y_max')) {
+                    if (session.hasOwnProperty('aimbot_sniper_rcs_y_max') && session.aimbot_sniper_rcs_y_max != null) {
                         page.querySelector('#aimbot_sniper_rcs_y_max').value = parseInt(session.aimbot_sniper_rcs_y_max * 100 / 2);
                         page.querySelector('#aimbot_sniper_rcs_text_y_max').innerHTML = page.querySelector('#aimbot_sniper_rcs_y_max').value + '%';
                     }
-                    if (session.hasOwnProperty('aimbot_sniper_smooth'))
+                    if (session.hasOwnProperty('aimbot_sniper_smooth') && session.aimbot_sniper_smooth != null)
                         page.querySelector('#aimbot_sniper_smooth').checked = session.aimbot_sniper_smooth;
-                    if (session.hasOwnProperty('aimbot_sniper_smooth_value'))
+                    if (session.hasOwnProperty('aimbot_sniper_smooth_value') && session.aimbot_sniper_smooth_value != null)
                         page.querySelector('#aimbot_sniper_smooth_value').innerHTML = parseFloat(session.aimbot_sniper_smooth_value).toFixed(1);
-                    if (session.hasOwnProperty('aimbot_sniper_smooth_value'))
+                    if (session.hasOwnProperty('aimbot_sniper_smooth_value') && session.aimbot_sniper_smooth_value != null)
                         page.querySelector('#aimbot_sniper_smooth_range').value = parseFloat(session.aimbot_sniper_smooth_value) * 100;
-                    if (session.hasOwnProperty('aimbot_sniper_salt'))
+                    if (session.hasOwnProperty('aimbot_sniper_salt') && session.aimbot_sniper_salt != null)
                         page.querySelector('#aimbot_sniper_salt').checked = session.aimbot_sniper_salt;
-                    if (session.hasOwnProperty('aimbot_sniper_salt_value'))
+                    if (session.hasOwnProperty('aimbot_sniper_salt_value') && session.aimbot_sniper_salt_value != null)
                         page.querySelector('#aimbot_sniper_salt_value').innerHTML = parseFloat(session.aimbot_sniper_salt_value).toFixed(1);
-                    if (session.hasOwnProperty('aimbot_sniper_salt_value'))
+                    if (session.hasOwnProperty('aimbot_sniper_salt_value') && session.aimbot_sniper_salt_value != null)
                         page.querySelector('#aimbot_sniper_salt_range').value = parseFloat(session.aimbot_sniper_salt_value) * 100;
-                    if (session.hasOwnProperty('aimbot_sniper_errmargin'))
+                    if (session.hasOwnProperty('aimbot_sniper_errmargin') && session.aimbot_sniper_errmargin != null)
                         page.querySelector('#aimbot_sniper_errmargin').checked = session.aimbot_sniper_errmargin;
-                    if (session.hasOwnProperty('aimbot_sniper_errm_value'))
+                    if (session.hasOwnProperty('aimbot_sniper_errm_value') && session.aimbot_sniper_errm_value != null)
                         page.querySelector('#aimbot_sniper_errm_value').innerHTML = parseFloat(session.aimbot_sniper_errm_value).toFixed(1);
-                    if (session.hasOwnProperty('aimbot_sniper_errm_value'))
+                    if (session.hasOwnProperty('aimbot_sniper_errm_value') && session.aimbot_sniper_errm_value != null)
                         page.querySelector('#aimbot_sniper_errm_range').value = parseFloat(session.aimbot_sniper_errm_value) * 100;
-                    if (session.hasOwnProperty('aimbot_sniper_smoothtype'))
+                    if (session.hasOwnProperty('aimbot_sniper_smoothtype') && session.aimbot_sniper_smoothtype != null)
                         page.querySelector('#aimbot_sniper_smoothtype').innerHTML = session.aimbot_sniper_smoothtype;
-                    if (session.hasOwnProperty('aimbot_sniper_smoke'))
+                    if (session.hasOwnProperty('aimbot_sniper_smoke') && session.aimbot_sniper_smoke != null)
                         page.querySelector('#aimbot_sniper_smoke').checked = session.aimbot_sniper_smoke;
-                    if (session.hasOwnProperty('aimbot_sniper_prediction'))
+                    if (session.hasOwnProperty('aimbot_sniper_prediction') && session.aimbot_sniper_prediction != null)
                         page.querySelector('#aimbot_sniper_prediction').checked = session.aimbot_sniper_prediction;
-                    if (session.hasOwnProperty('aimbot_sniper_ignore_jump'))
+                    if (session.hasOwnProperty('aimbot_sniper_ignore_jump') && session.aimbot_sniper_ignore_jump != null)
                         page.querySelector('#aimbot_sniper_ignore_jump').checked = session.aimbot_sniper_ignore_jump;
-                    if (session.hasOwnProperty('aimbot_sniper_flash'))
+                    if (session.hasOwnProperty('aimbot_sniper_flash') && session.aimbot_sniper_flash != null)
                         page.querySelector('#aimbot_sniper_flash').checked = session.aimbot_sniper_flash;
-                    if (session.hasOwnProperty('aimbot_sniper_ignore_limbs'))
+                    if (session.hasOwnProperty('aimbot_sniper_ignore_limbs') && session.aimbot_sniper_ignore_limbs != null)
                         page.querySelector('#aimbot_sniper_ignore_limbs').checked = session.aimbot_sniper_ignore_limbs;
-                    if (session.hasOwnProperty('aimbot_sniper_priority'))
+                    if (session.hasOwnProperty('aimbot_sniper_priority') && session.aimbot_sniper_priority != null)
                         page.querySelector('#aimbot_sniper_priority').innerHTML = session.aimbot_sniper_priority;
-                    if (session.hasOwnProperty('aimbot_sniper_timeout'))
+                    if (session.hasOwnProperty('aimbot_sniper_timeout') && session.aimbot_sniper_timeout != null)
                         page.querySelector('#aimbot_sniper_timeout').innerHTML = session.aimbot_sniper_timeout;
-                    if (session.hasOwnProperty('aimbot_sniper_timeout'))
+                    if (session.hasOwnProperty('aimbot_sniper_timeout') && session.aimbot_sniper_timeout != null)
                         page.querySelector('#aimbot_sniper_timeout_range').value = parseInt(session.aimbot_sniper_timeout / 20);
-
-                    RCSRandomSwitch('aimbot_sniper_rcs_random', false);
+                    
+                    if (session.aimbot_sniper_rcs_random != null)
+                        RCSRandomSwitch('aimbot_sniper_rcs_random', false);
                     break;
                 case 'aimbot_shotgun':
                     var session = settings.aimbot[4];
 
-                    if (session.hasOwnProperty('aimbot_shotgun_enable'))
+                    if (session.hasOwnProperty('aimbot_shotgun_enable') && session.aimbot_shotgun_enable != null)
                         page.querySelector('#aimbot_shotgun_enable').checked = session.aimbot_shotgun_enable;
-                    if (session.hasOwnProperty('aimbot_shotgun_target_teammate'))
+                    if (session.hasOwnProperty('aimbot_shotgun_target_teammate') && session.aimbot_shotgun_target_teammate != null)
                         page.querySelector('#aimbot_shotgun_target_teammate').checked = session.aimbot_shotgun_target_teammate;
-                    if (session.hasOwnProperty('aimbot_shotgun_aim'))
+                    if (session.hasOwnProperty('aimbot_shotgun_aim') && session.aimbot_shotgun_aim != null)
                         page.querySelector('#aimbot_shotgun_aim').innerHTML = session.aimbot_shotgun_aim;
-                    if (session.hasOwnProperty('aimbot_shotgun_autoaim'))
+                    if (session.hasOwnProperty('aimbot_shotgun_autoaim') && session.aimbot_shotgun_autoaim != null)
                         page.querySelector('#aimbot_shotgun_autoaim').checked = session.aimbot_shotgun_autoaim;
-                    if (session.hasOwnProperty('aimbot_shotgun_fov'))
+                    if (session.hasOwnProperty('aimbot_shotgun_fov') && session.aimbot_shotgun_fov != null)
                         page.querySelector('#aimbot_shotgun_fov').innerHTML = parseFloat(session.aimbot_shotgun_fov).toFixed(1);
-                    if (session.hasOwnProperty('aimbot_shotgun_fov'))
+                    if (session.hasOwnProperty('aimbot_shotgun_fov') && session.aimbot_shotgun_fov != null)
                         page.querySelector('#aimbot_shotgun_fov_range').value = parseFloat(session.aimbot_shotgun_fov) / 1.8;
-                    if (session.hasOwnProperty('aimbot_shotgun_rcs'))
+                    if (session.hasOwnProperty('aimbot_shotgun_rcs') && session.aimbot_shotgun_rcs != null)
                         page.querySelector('#aimbot_shotgun_rcs').innerHTML = session.aimbot_shotgun_rcs;
-                    if (session.hasOwnProperty('aimbot_shotgun_rcs_random'))
+                    if (session.hasOwnProperty('aimbot_shotgun_rcs_random') && session.aimbot_shotgun_rcs_random != null)
                         page.querySelector('#aimbot_shotgun_rcs_random').checked = session.aimbot_shotgun_rcs_random;
-                    if (session.hasOwnProperty('aimbot_shotgun_rcs_x_min')) {
+                    if (session.hasOwnProperty('aimbot_shotgun_rcs_x_min') && session.aimbot_shotgun_rcs_x_min != null) {
                         page.querySelector('#aimbot_shotgun_rcs_x_min').value = parseInt(session.aimbot_shotgun_rcs_x_min * 100 / 2);
                         page.querySelector('#aimbot_shotgun_rcs_text_x_min').innerHTML = page.querySelector('#aimbot_shotgun_rcs_x_min').value + '%';
                     }
-                    if (session.hasOwnProperty('aimbot_shotgun_rcs_x_max')) {
+                    if (session.hasOwnProperty('aimbot_shotgun_rcs_x_max') && session.aimbot_shotgun_rcs_x_max != null) {
                         page.querySelector('#aimbot_shotgun_rcs_x_max').value = parseInt(session.aimbot_shotgun_rcs_x_max * 100 / 2);
                         page.querySelector('#aimbot_shotgun_rcs_text_x_max').innerHTML = page.querySelector('#aimbot_shotgun_rcs_x_max').value + '%';
                     }
-                    if (session.hasOwnProperty('aimbot_shotgun_rcs_y_min')) {
+                    if (session.hasOwnProperty('aimbot_shotgun_rcs_y_min') && session.aimbot_shotgun_rcs_y_min != null) {
                         page.querySelector('#aimbot_shotgun_rcs_y_min').value = parseInt(session.aimbot_shotgun_rcs_y_min * 100 / 2);
                         page.querySelector('#aimbot_shotgun_rcs_text_y_min').innerHTML = page.querySelector('#aimbot_shotgun_rcs_y_min').value + '%';
                     }
-                    if (session.hasOwnProperty('aimbot_shotgun_rcs_y_max')) {
+                    if (session.hasOwnProperty('aimbot_shotgun_rcs_y_max') && session.aimbot_shotgun_rcs_y_max != null) {
                         page.querySelector('#aimbot_shotgun_rcs_y_max').value = parseInt(session.aimbot_shotgun_rcs_y_max * 100 / 2);
                         page.querySelector('#aimbot_shotgun_rcs_text_y_max').innerHTML = page.querySelector('#aimbot_shotgun_rcs_y_max').value + '%';
                     }
-                    if (session.hasOwnProperty('aimbot_shotgun_smooth'))
+                    if (session.hasOwnProperty('aimbot_shotgun_smooth') && session.aimbot_shotgun_smooth != null)
                         page.querySelector('#aimbot_shotgun_smooth').checked = session.aimbot_shotgun_smooth;
-                    if (session.hasOwnProperty('aimbot_shotgun_smooth_value'))
+                    if (session.hasOwnProperty('aimbot_shotgun_smooth_value') && session.aimbot_shotgun_smooth_value != null)
                         page.querySelector('#aimbot_shotgun_smooth_value').innerHTML = parseFloat(session.aimbot_shotgun_smooth_value).toFixed(1);
-                    if (session.hasOwnProperty('aimbot_shotgun_smooth_value'))
+                    if (session.hasOwnProperty('aimbot_shotgun_smooth_value') && session.aimbot_shotgun_smooth_value != null)
                         page.querySelector('#aimbot_shotgun_smooth_range').value = parseFloat(session.aimbot_shotgun_smooth_value) * 100;
-                    if (session.hasOwnProperty('aimbot_shotgun_salt'))
+                    if (session.hasOwnProperty('aimbot_shotgun_salt') && session.aimbot_shotgun_salt != null)
                         page.querySelector('#aimbot_shotgun_salt').checked = session.aimbot_shotgun_salt;
-                    if (session.hasOwnProperty('aimbot_shotgun_salt_value'))
+                    if (session.hasOwnProperty('aimbot_shotgun_salt_value') && session.aimbot_shotgun_salt_value != null)
                         page.querySelector('#aimbot_shotgun_salt_value').innerHTML = parseFloat(session.aimbot_shotgun_salt_value).toFixed(1);
-                    if (session.hasOwnProperty('aimbot_shotgun_salt_value'))
+                    if (session.hasOwnProperty('aimbot_shotgun_salt_value') && session.aimbot_shotgun_salt_value != null)
                         page.querySelector('#aimbot_shotgun_salt_range').value = parseFloat(session.aimbot_shotgun_salt_value) * 100;
-                    if (session.hasOwnProperty('aimbot_shotgun_errmargin'))
+                    if (session.hasOwnProperty('aimbot_shotgun_errmargin') && session.aimbot_shotgun_errmargin != null)
                         page.querySelector('#aimbot_shotgun_errmargin').checked = session.aimbot_shotgun_errmargin;
-                    if (session.hasOwnProperty('aimbot_shotgun_errm_value'))
+                    if (session.hasOwnProperty('aimbot_shotgun_errm_value') && session.aimbot_shotgun_errm_value != null)
                         page.querySelector('#aimbot_shotgun_errm_value').innerHTML = parseFloat(session.aimbot_shotgun_errm_value).toFixed(1);
-                    if (session.hasOwnProperty('aimbot_shotgun_errm_value'))
+                    if (session.hasOwnProperty('aimbot_shotgun_errm_value') && session.aimbot_shotgun_errm_value != null)
                         page.querySelector('#aimbot_shotgun_errm_range').value = parseFloat(session.aimbot_shotgun_errm_value) * 100;
-                    if (session.hasOwnProperty('aimbot_shotgun_smoothtype'))
+                    if (session.hasOwnProperty('aimbot_shotgun_smoothtype') && session.aimbot_shotgun_smoothtype != null)
                         page.querySelector('#aimbot_shotgun_smoothtype').innerHTML = session.aimbot_shotgun_smoothtype;
-                    if (session.hasOwnProperty('aimbot_shotgun_smoke'))
+                    if (session.hasOwnProperty('aimbot_shotgun_smoke') && session.aimbot_shotgun_smoke != null)
                         page.querySelector('#aimbot_shotgun_smoke').checked = session.aimbot_shotgun_smoke;
-                    if (session.hasOwnProperty('aimbot_shotgun_prediction'))
+                    if (session.hasOwnProperty('aimbot_shotgun_prediction') && session.aimbot_shotgun_prediction != null)
                         page.querySelector('#aimbot_shotgun_prediction').checked = session.aimbot_shotgun_prediction;
-                    if (session.hasOwnProperty('aimbot_shotgun_ignore_jump'))
+                    if (session.hasOwnProperty('aimbot_shotgun_ignore_jump') && session.aimbot_shotgun_ignore_jump != null)
                         page.querySelector('#aimbot_shotgun_ignore_jump').checked = session.aimbot_shotgun_ignore_jump;
-                    if (session.hasOwnProperty('aimbot_shotgun_flash'))
+                    if (session.hasOwnProperty('aimbot_shotgun_flash') && session.aimbot_shotgun_flash != null)
                         page.querySelector('#aimbot_shotgun_flash').checked = session.aimbot_shotgun_flash;
-                    if (session.hasOwnProperty('aimbot_shotgun_ignore_limbs'))
+                    if (session.hasOwnProperty('aimbot_shotgun_ignore_limbs') && session.aimbot_shotgun_ignore_limbs != null)
                         page.querySelector('#aimbot_shotgun_ignore_limbs').checked = session.aimbot_shotgun_ignore_limbs;
-                    if (session.hasOwnProperty('aimbot_shotgun_priority'))
+                    if (session.hasOwnProperty('aimbot_shotgun_priority') && session.aimbot_shotgun_priority != null)
                         page.querySelector('#aimbot_shotgun_priority').innerHTML = session.aimbot_shotgun_priority;
-                    if (session.hasOwnProperty('aimbot_shotgun_timeout'))
+                    if (session.hasOwnProperty('aimbot_shotgun_timeout') && session.aimbot_shotgun_timeout != null)
                         page.querySelector('#aimbot_shotgun_timeout').innerHTML = session.aimbot_shotgun_timeout;
-                    if (session.hasOwnProperty('aimbot_shotgun_timeout'))
+                    if (session.hasOwnProperty('aimbot_shotgun_timeout') && session.aimbot_shotgun_timeout != null)
                         page.querySelector('#aimbot_shotgun_timeout_range').value = parseInt(session.aimbot_shotgun_timeout / 20);
-
-                    RCSRandomSwitch('aimbot_shotgun_rcs_random', false);
+                    
+                    if (session.aimbot_shotgun_rcs_random != null)
+                        RCSRandomSwitch('aimbot_shotgun_rcs_random', false);
                     break;
                 case 'trigger':
                     page.querySelector('#triggerbot_enable').checked = settings.triggerbot.triggerbot_enable;
